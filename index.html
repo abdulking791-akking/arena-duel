@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Arena Duel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="hud">
+    <div class="healthbar">
+      <div class="label">P1</div>
+      <div class="bar-bg"><div id="hp1" class="bar-fill green"></div></div>
+    </div>
+    <div class="healthbar">
+      <div class="label">P2</div>
+      <div class="bar-bg"><div id="hp2" class="bar-fill red"></div></div>
+    </div>
+  </div>
+
+  <canvas id="game"></canvas>
+
+  <div id="joystick1" class="joystick left">
+    <div class="stick"></div>
+  </div>
+  <button id="shoot1" class="shoot-btn left">🔫</button>
+
+  <div id="joystick2" class="joystick right">
+    <div class="stick"></div>
+  </div>
+  <button id="shoot2" class="shoot-btn right">🔫</button>
+
+  <div id="winScreen" class="hidden">
+    <div id="winText"></div>
+    <button id="replayBtn">Play Again</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
